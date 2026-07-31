@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>projects · moyunni</title>
+<meta name="description" content="terminal utilities, cli managers, local-first systems. the best of moyunni's code.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+.lang-sw .sep{color:#5c584d}
+.lang-en{display:inline}
+.lang-ru{display:none}
+body.russian .lang-en{display:none}
+body.russian .lang-ru{display:inline}
+.mascot img{image-rendering:auto;max-height:150px;max-width:100%}
+.mascot.right img{max-height:96px;max-width:120px}
+.juke{border:1px solid #2a271f;background:#000;padding:1rem 1.2rem;margin:1.4rem auto;max-width:64ch}
+.juke pre.vis{display:inline-block;text-align:left;margin:.4rem 0;padding:0;background:none;border:0;color:#5c584d;font-size:11.5px;line-height:1.25}
+.juke .track{color:#e9e4d6;font-weight:700;margin:.4rem 0;min-height:1.4em;text-align:center}
+.juke .btns{text-align:center;margin:.6rem 0}
+.juke button{background:none;border:1px solid #2a271f;color:#f2837b;font:inherit;font-weight:700;cursor:pointer;padding:.2rem .7rem;margin:0 .15rem;transition:background .12s,color .12s,border-color .12s}
+.juke button:hover{background:#14120d;border-color:#5c584d}
+.juke button.play{border-color:#5c584d}
+.juke button.stop{color:#8f8b80}
+.juke .vol{text-align:center;color:#8f8b80;font-size:.85em;margin:.4rem 0}
+.juke .vol input{vertical-align:middle;accent-color:#f2837b;width:120px}
+.juke .vol .vv{color:#f2837b}
+.juke .pl{border:1px solid #221f18;margin-top:.7rem;padding:.4rem .6rem;max-height:140px;overflow-y:auto;font-size:.9em}
+.juke .pl .plt{color:#8f8b80;text-align:center;margin-bottom:.3rem;letter-spacing:.1em}
+.juke .pl .pli{color:#c5c0b2;cursor:pointer;padding:.12rem .3rem;border-bottom:1px dotted #221f18;transition:color .1s}
+.juke .pl .pli:hover{color:#e9e4d6}
+.juke .pl .pli.on{color:#f2837b;font-weight:700}
+.juke .pl .pli .nn{color:#77725f}
+</style>
+</head>
+<body>
+
+<h1 class="hdv"><span class="blk">.::</span><span class="ttl">projects</span><span class="blk">::.</span></h1>
+<p class="meta">
+  <span class="lang-en">the best of the code, in my opinion</span><span class="lang-ru">лучшее из кода, по моему мнению</span>
+  · <a href="./index.html">index</a>
+</p>
+
+<p class="muted center lang-sw">
+  <a href="#" onclick="switchLanguage('en');return false">english</a>
+  <span class="sep">·</span>
+  <a href="#" onclick="switchLanguage('ru');return false">русский</a>
+</p>
+
+<p class="lede">
+  <span class="lang-en">i occasionally write code. usually terminal utilities, cli managers, and local-first systems. not all of it is shown here, just the best in my opinion. the rest sits in the git services below each card. the honest trade is that most of this is built for one user (me) and documented for that same user, so the rough edges are a feature, not a bug.</span>
+  <span class="lang-ru">я иногда пишу код. обычно это терминальные утилиты, cli-менеджеры и local-first системы. тут показано не всё, а только лучшее по моему мнению. остальное лежит в git-сервисах под каждой карточкой. честная оговорка: большая часть этого сделана для одного пользователя (меня) и задокументирована для него же, так что шероховатости это фича, а не баг.</span>
+</p>
+
+<div class="legend">
+  <span><span class="badge ok">core</span></span>
+  <span><span class="badge mid">active</span></span>
+</div>
+
+<h2>the work</h2>
+
+<div class="tool"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zm2 2v12h14V6zm3 3 4 3-4 3v-2l2-1-2-1zm5 4h5v2h-5z"/></svg><div class="tool-b"><p class="tool-h"><span class="tool-name">chistore</span> <span class="badge mid">active</span> <span class="tool-net">package repo · chinchilla team</span></p><p class="tool-d"><span class="lang-en">a repository of packages developed by the chinchilla team. more programs are coming soon.</span> <span class="lang-ru">репозиторий с пакетами, разрабатываемыми командой chinchilla team. скоро будут другие программы.</span> &mdash; no, wait, no em dash: <a href="https://gitverse.ru/moyunni/chistore">gitverse</a> · <a href="https://github.com/moyunnis/chistore">github</a></p></div></div>
+
+<div class="tool"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zm2 2v12h14V6zm3 3 4 3-4 3v-2l2-1-2-1zm5 4h5v2h-5z"/></svg><div class="tool-b"><p class="tool-h"><span class="tool-name">rawgpt</span> <span class="badge ok">core</span> <span class="tool-net">local ai · ollama</span></p><p class="tool-d"><span class="lang-en">a tool for local ai running on your server or computer using <a href="https://ollama.com">ollama</a>. the honest trade is that it assumes you already run a model locally and are fine talking to it in a terminal.</span> <span class="lang-ru">инструмент для локальных ии, работающих на вашем сервере или компьютере, с помощью <a href="https://ollama.com">ollama</a>. честная оговорка: предполагается, что у вас уже локально крутится модель и вам нормально говорить с ней в терминале.</span> <a href="https://gitverse.ru/moyunni/RawGPT">gitverse</a> · <a href="https://github.com/moyunnis/RawGPT">github</a></p></div></div>
+
+<div class="tool"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zm2 2v12h14V6zm3 3 4 3-4 3v-2l2-1-2-1zm5 4h5v2h-5z"/></svg><div class="tool-b"><p class="tool-h"><span class="tool-name">rawgpt-android</span> <span class="badge mid">active</span> <span class="tool-net">android client</span></p><p class="tool-d"><span class="lang-en">rawgpt version for android phones. works only if you have a pc or server to do the actual thinking, the phone is just a thin terminal.</span> <span class="lang-ru">версия rawgpt на телефоны с ядром android. работает только если у вас есть пк или сервер, который думает, телефон это просто тонкий терминал.</span> <a href="https://gitverse.ru/moyunni/RawGPT-android">gitverse</a> · <a href="https://github.com/moyunnis/RawGPT-android">github</a> · <a href="https://git.inthemansion.com/moyunni/RawGPT-android">mansion</a> · <a href="https://youtu.be/dQw4w9WgXcQ?si=jZoneDwAVAah2gsV">disroot</a></p></div></div>
+
+<div class="tool"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zm2 2v12h14V6zm3 3 4 3-4 3v-2l2-1-2-1zm5 4h5v2h-5z"/></svg><div class="tool-b"><p class="tool-h"><span class="tool-name">maximus</span> <span class="badge mid">active</span> <span class="tool-net">userbot · max messenger</span></p><p class="tool-d"><span class="lang-en">userbot for the max messenger, based on <a href="https://github.com/igroshka/Maxli">maxli</a>.</span> <span class="lang-ru">юзербот для мессенджера max на базе <a href="https://github.com/igroshka/Maxli">maxli</a>.</span> <a href="https://github.com/moyunnis/Maximus">github</a> · <a href="https://git.inthemansion.com/moyunni/Maximus">mansion</a></p></div></div>
+
+<div class="tool"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zm2 2v12h14V6zm3 3 4 3-4 3v-2l2-1-2-1zm5 4h5v2h-5z"/></svg><div class="tool-b"><p class="tool-h"><span class="tool-name">uniland</span> <span class="badge mid">active</span> <span class="tool-net">language · cli and gui</span></p><p class="tool-d"><span class="lang-en">a simplified programming language for writing cli utilities and gui programs. the honest trade is that simplicity here means you hit a ceiling fast on anything large, which is the point.</span> <span class="lang-ru">упрощённый язык программирования для написания cli-утилит и gui-программ. честная оговорка: простота здесь означает, что на чём-то большом быстро упрёшься в потолок, в этом и суть.</span> <a href="https://github.com/moyunnis/uniland">github</a> · <a href="https://gitverse.ru/moyunni/uniland">gitverse</a></p></div></div>
+
+<p>
+  <span class="lang-en">the rest lives in the git services. but if even that doesn't interest you, you can read the <a href="./archive.html">story archive</a>, or see where else to find me on the <a href="./links.html">links</a> page.</span>
+  <span class="lang-ru">остальное живёт в git-сервисах. но если и это тебе неинтересно, можешь почитать <a href="./archive.html">архив историй</a> или посмотреть, где ещё меня искать, на странице <a href="./links.html">ссылок</a>.</span>
+</p>
+
+<p class="center home"><a href="./index.html">[ home ]</a></p>
+<p class="mascot right"><img src="./pic/moyunni_sign.jpg" alt="moyunni"></p>
+<p class="dv end">.::&nbsp;&nbsp;eof&nbsp;&nbsp;::.</p>
+
+<script>function switchLanguage(l){document.body.classList.toggle('russian',l==='ru');}</script>
+</body>
+</html>
