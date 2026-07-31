@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome · moyunni</title>
+<meta name="description" content="moyunni's story archive.">
+<link rel="icon" href="../favicon.ico">
+<link rel="stylesheet" href="../style.css">
+<style>
+.lang-sw .sep{color:#5c584d}
+.lang-en{display:inline}
+.lang-ru{display:none}
+body.russian .lang-en{display:none}
+body.russian .lang-ru{display:inline}
+.mascot img{image-rendering:auto;max-height:150px;max-width:100%}
+.mascot.right img{max-height:96px;max-width:120px}
+</style>
+</head>
+<body>
+
+<h1 class="hdv"><span class="blk">.::</span><span class="ttl">Welcome</span><span class="blk">::.</span></h1>
+<p class="meta">
+  <span class="lang-en">from the archive</span><span class="lang-ru">из архива</span>
+  · <a href="../archive.html">archive</a> · <a href="../index.html">index</a>
+</p>
+
+<p class="muted center lang-sw">
+  <a href="#" onclick="switchLanguage('en');return false">english</a>
+  <span class="sep">·</span>
+  <a href="#" onclick="switchLanguage('ru');return false">русский</a>
+</p>
+
+<p class="lede meta">
+  <span class="lang-en">published:</span><span class="lang-ru">опубликовано:</span> 2026-01-15
+</p>
+
+<div class="article-content">
+<h3>Добро пожаловать в архив</h3>
+<p>Это первая статья в моём архиве. Здесь я буду публиковать разные истории, мысли и заметки.</p>
+<strong>Что здесь будет:</strong>
+<ul>
+<li>Личные истории и размышления</li>
+<li>Технические заметки</li>
+<li>Разное</li>
+</ul>
+<strong>Важное предупреждение:</strong> все статьи написаны на русском языке. Это мой выбор, и я придерживаюсь его.
+<p>Если ты не знаешь русский — это твой шанс выучить. Или используй переводчик.</p>
+<p>---</p>
+<p>Спасибо, что заглянул. Надеюсь, тебе понравится.</p>
+
+</div>
+
+<p class="center home"><a href="../archive.html">[ back to archive ]</a></p>
+<p class="mascot right"><img src="../pic/moyunni_sign.jpg" alt="moyunni"></p>
+<p class="dv end">.::&nbsp;&nbsp;eof&nbsp;&nbsp;::.</p>
+
+<script>function switchLanguage(l){document.body.classList.toggle('russian',l==='ru');}</script>
+</body>
+</html>
