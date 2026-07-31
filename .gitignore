@@ -2,10 +2,13 @@
 # Compiled and build artifacts
 *.pyc
 __pycache__/
+*.o
+*.obj
 
 # Dependencies
-venv/
 .venv/
+venv/
+node_modules/
 
 # Logs and temp files
 *.log
@@ -21,14 +24,12 @@ venv/
 .vscode/
 .idea/
 
-# Coverage reports
+# Coverage
 coverage/
 htmlcov/
 .coverage
 
-# MyPy cache
-.mypy_cache/
-
-# PyTest cache
-.pytest_cache/
+# OS
+.DS_Store
+Thumbs.db
 ```
